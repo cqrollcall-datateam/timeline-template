@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <title>Timeline</title>
+</head>
+
+<body>
+    <div class="timeline-intro">
+        <p class="timeline-hed">Your headline goes here</p>
+        <p class="timeline-chatter"> Your chatter goes here and you can even add a line break using <code> <br> </code>
+            if you think you need a new line. <br> And the new line will live here, isn't that cool? </p>
+    </div>
+    <div class="timeline-wrapper">
+        <div class="timeline">
+            <div class="temp-loading">Loading...</div>
+        </div>
+    </div>
+    <br>
+    <div class="graphic-credits">
+        Source: Author 1, Author 2
+        <!-- Add source line here -->
+        <br>
+        <!-- Add credits here -->
+        <br>
+        <!-- Add another line for credits here if needed -->
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <!-- This empty div should ensure that pym will not cut the bottom off of your graphic! -->
+        <br>
+    </div>
+    <!-- TODO: Don't leave all these comments laying around in your final code! -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://cdn.rawgit.com/datanews/tik-tok/0.1.1/dist/tik-tok.min.js"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+</body>
+<script>
+    var pymChild = new pym.Child();
+    window.setInterval(function () {
+        pymChild.sendHeight()
+    }, 6000);
+</script>
+
+</html>
